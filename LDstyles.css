@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#site_wrap{
+    background-color: red;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(0, 272px)) 1fr;
+    grid-gap: 0px;
+    grid-template-areas: "nav_bar nav_bar nav_bar nav_bar nav_bar nav_bar"
+        "contentBlock1 contentBlock1 contentBlock1 contentBlock1 contentBlock1 contentBlock1"
+        "contentBlock2 contentBlock2 contentBlock2 contentBlock2 contentBlock2 contentBlock2"
+        "contentBlock3 contentBlock3 contentBlock3 contentBlock3 contentBlock3 contentBlock3"
+        "contentBlock4 contentBlock4 contentBlock4 contentBlock4 contentBlock4 contentBlock4"
+        "contentBlock5 contentBlock5 contentBlock5 contentBlock5 contentBlock5 contentBlock5"
+        "footerBlock footerBlock footerBlock footerBlock footerBlock footerBlock"
+}
+
+.nav_bar{
+    background-color: #3B3D4F;
+    grid-area: nav_bar; 
+    height: 87px;
+    position: static;
+    font-family: "Lucida Console", Helvetica, sans-serif;
+}
+.nav_bar a{
+    padding-top: 1em;
+}
+
+.nav_bar img{
+    padding-top: 1em;
+    padding-left: 1em;
+    height:40px;
+    width:42px;
+}
+
+
+.nav_bar #navItem1{
+    padding-left: 65em;
+    color: #E1DCC4;
+}
+.nav_bar #navItem2{
+    padding-left: 1em;
+    color: #E1DCC4;
+    display: inline-block;
+}
+.nav_bar #navItem3{
+    padding-left: 1em;
+    color: #E1DCC4;
+    display: inline-block;
+}
+.nav_bar #navItem4{
+    padding-left: 1em;
+    color: #E1DCC4;
+    display: inline-block;
+}
+
+.contentBlock1{
+    background-color: #3B3D4F;
+    grid-area: contentBlock1;
+    height: 446px;
+    position: static;    
+    
+}
+.contentBlock1 img{
+    float:left;
+    border: none;
+}
+
+.contentBlock2{
+    background-color: #E1DCC4;
+    grid-area: contentBlock2;
+    height: 193px;
+    position: static;
+    text-align: center;
+    align-content: center;
+    color: #3B3D4F;
+    font-family: "Lucida Console", Arial, sans-serif;
+    
+}
+
+.contentBlock2 #myWork2{
+    
+}
+
+.contentBlock3 img{
+    width: 350px; 
+    height: 263px;
+	border: 2px solid black;
+	border-radius:30px;
+    float:left;
+    position: static;
+    margin-left: 6em;
+}
+
+.contentBlock3{
+    background-color: #F0B7B4;
+    grid-area: contentBlock3;
+    height: 475px;
+    position: static;
+    
+}
+
+.contentBlock3 h2{
+    text-align: center;
+    color: #3B3D4F;
+    font-family: "Lucida Console", Arial, sans-serif;
+        
+}
+
+.contentBlock3 h3{
+    float: left;
+    color: #3B3D4F;
+    display: inline-block;
+    padding-left: 8em;
+    font-family: "Lucida Console", Arial, sans-serif;
+}
+.contentBlock3 #exApp2{
+    padding-left: 14em;
+}
+
+.contentBlock3 #exApp3{
+    padding-left: 13em;
+}
+
+.contentBlock3 p{
+    float: left;
+    color: #3B3D4F;
+    display: inline-block;
+    padding-left: 15em;
+    font-family: "Lucida Console", Arial, sans-serif;
+}
+
+.contentBlock3 #seeMore2{
+    padding-left: 22em;
+}
+
+.contentBlock3 #seeMore3{
+    padding-left: 23em;
+}
+
+.contentBlock4{
+    background-color: #FFFFFF;
+    grid-area: contentBlock4;
+    height: 525px;
+    position: static;
+    
+}
+.contentBlock4 h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    color: #F0B7B4;
+    font-family: "Lucida console", Arial, sans-serif;
+    
+}
+
+.contentBlock5{
+    background-color: #3B3D4F;
+    grid-area: contentBlock5;
+    height: 231px;
+    position: static;
+    font-family: "Lucida Console", Arial, sans-serif;
+    text-align: center;
+    align-content: center;
+    color:#E1DCC4;
+    
+}
+
+.contentBlock4 img{
+    height: 398px;
+    width: 866px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.footerBlock{
+    background-color: #E1DCC4;
+    grid-area: footerBlock;
+    height:164px;
+    position: static;
+}
+
+
+
+.contentBlock1 h1 {
+    padding-top: 4em;
+    font-family: "Lucida Console", Helvetica, sans-serif;
+    padding-left: 700px;
+    color: #E1DCC4;
+    
+}
+
+.contentBlock1 p {
+    font-family: "Lucida Console", Helvetica, sans-serif;
+    padding-left: 700px;
+    color: #E1DCC4;
+}
