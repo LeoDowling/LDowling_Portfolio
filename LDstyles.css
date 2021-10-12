@@ -7,6 +7,7 @@ body{
 #site_wrap{
     background-color: red;
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr repeat(4, minmax(0, 272px)) 1fr;
     grid-gap: 0px;
@@ -22,50 +23,110 @@ body{
 .nav_bar{
     background-color: #3B3D4F;
     grid-area: nav_bar; 
-    height: 87px;
-    position: static;
+    height: 4vh;
+    position: fixed;
     font-family: "Lucida Console", Helvetica, sans-serif;
-}
-.nav_bar a{
-    padding-top: 1em;
+    width: 100%;
+    max-width: 100vw;
+    display: table;
 }
 
-.nav_bar img{
+
+.nav_bar a{
     padding-top: 1em;
-    padding-left: 1em;
-    height:40px;
-    width:42px;
+    float:right;
+    padding-bottom: 1vh;
+    max-width: 100vw;
+    height: auto;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+.nav_bar img{
+    float:left;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    height:auto;
+    max-width:42px;
 }
 
 
 .nav_bar #navItem1{
-    padding-left: 65em;
+    padding-left: 2vw;
+    padding-right: 4vw;
     color: #E1DCC4;
+    max-width: 100%;
+    display:inline-block;
+    height:auto;
 }
+.nav_bar #navItem1:hover{
+    color: #F0B7B4;
+}
+
 .nav_bar #navItem2{
-    padding-left: 1em;
+    padding-left: 2vw;
     color: #E1DCC4;
     display: inline-block;
+    max-width: 100%;
+    height:auto;
+}
+.nav_bar #navItem2:hover{
+    color: #F0B7B4;
 }
 .nav_bar #navItem3{
-    padding-left: 1em;
+    padding-left: 2vw;
     color: #E1DCC4;
     display: inline-block;
+    max-width: 100%;
+    height:auto;
+}
+.nav_bar #navItem3:hover{
+    color: #F0B7B4;
 }
 .nav_bar #navItem4{
-    padding-left: 1em;
+    padding-left: 2vw;
     color: #E1DCC4;
     display: inline-block;
+    max-width: 100%;
+    height:auto;
+}
+.nav_bar #navItem4:hover{
+    color: #F0B7B4;
 }
 
 .contentBlock1{
     background-color: #3B3D4F;
     grid-area: contentBlock1;
-    height: 446px;
-    position: static;    
+    height: auto;
+    position: static; 
+    max-width: 100%;
     
 }
+
+.contentBlock1 h1 {
+    padding-top: 4em;
+    font-family: "Lucida Console", Helvetica, sans-serif;
+    padding-left: 60vw;
+    color: #E1DCC4;
+    
+}
+
+.contentBlock1 p {
+    font-family: "Lucida Console", Helvetica, sans-serif;
+    color: #E1DCC4;
+    width: 95vw;
+    padding-left: 1em;
+    height: auto;
+}
+
 .contentBlock1 img{
+    padding-left: 1em;
+    padding-top: 2em;
+    max-width: 60vw;
+    min-width: 30vw;
+    height:auto;
     float:left;
     border: none;
 }
@@ -73,7 +134,7 @@ body{
 .contentBlock2{
     background-color: #E1DCC4;
     grid-area: contentBlock2;
-    height: 193px;
+    height: auto;
     position: static;
     text-align: center;
     align-content: center;
@@ -82,27 +143,36 @@ body{
     
 }
 
-.contentBlock2 #myWork2{
-    
+.contentBlock2 a{
+  color: inherit;
+  text-decoration: inherit;
+
+}
+.contentBlock2 a:hover{
+  color: #F0B7B4;
+
 }
 
-.contentBlock3 img{
-    width: 350px; 
-    height: 263px;
-	border: 2px solid black;
-	border-radius:30px;
-    float:left;
-    position: static;
-    margin-left: 6em;
-}
 
 .contentBlock3{
     background-color: #F0B7B4;
     grid-area: contentBlock3;
-    height: 475px;
+    height: auto;
     position: static;
+    max-width: 100%;
+    display: table;
     
 }
+
+.contentBlock3 img{
+    max-width: 350px;
+    height: 263px;
+	border: 2px solid black;
+	border-radius:30px;
+    margin-left: 8vw;
+    float:left;
+}
+
 
 .contentBlock3 h2{
     text-align: center;
@@ -115,37 +185,75 @@ body{
     float: left;
     color: #3B3D4F;
     display: inline-block;
-    padding-left: 8em;
+    font-size: 2vw;
     font-family: "Lucida Console", Arial, sans-serif;
 }
+
+.contentBlock3 #exApp1{
+    padding-left: 10vw;
+    max-width: 33.3vw;
+}
 .contentBlock3 #exApp2{
-    padding-left: 14em;
+    padding-left: 5vw;
+    max-width: 33.3vw;
 }
 
 .contentBlock3 #exApp3{
-    padding-left: 13em;
+    padding-left: 5vw;
+    max-width: 33.3vw;
+}
+
+
+.contentBlock3 #blockImage {
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    white-space:nowrap;
+    line-height:0;
+}
+.contentBlock3 #GroupImage{
+    max-width: 22vw;
+    min-width: 10vw;
+    min-height: 10vw;
+    max-height: 22vw;
+    width:100vw;
 }
 
 .contentBlock3 p{
     float: left;
     color: #3B3D4F;
     display: inline-block;
-    padding-left: 15em;
     font-family: "Lucida Console", Arial, sans-serif;
 }
 
+.contentBlock3 p:hover{
+    color: #E1DCC4;
+}
+
+.contentBlock3 #seeMore1{
+    padding-left: 14vw;
+    font-size: 2vw;
+}
+
 .contentBlock3 #seeMore2{
-    padding-left: 22em;
+    padding-left: 18vw;
+    font-size: 2vw;
 }
 
 .contentBlock3 #seeMore3{
-    padding-left: 23em;
+    padding-left: 18vw;
+    font-size: 2vw;
+}
+
+.contentBlock3 a{
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .contentBlock4{
     background-color: #FFFFFF;
     grid-area: contentBlock4;
-    height: 525px;
+    height: auto;
     position: static;
     
 }
@@ -162,7 +270,8 @@ body{
 .contentBlock5{
     background-color: #3B3D4F;
     grid-area: contentBlock5;
-    height: 231px;
+    height: auto;
+    max-width: 100%;
     position: static;
     font-family: "Lucida Console", Arial, sans-serif;
     text-align: center;
@@ -171,9 +280,24 @@ body{
     
 }
 
+
+.contentBlock5 img{
+    height: auto; 
+    width: 87px;
+    max-width: 15vw;
+    padding-left: 2vw;
+    max-height: auto;
+    padding-bottom: 2em;
+}
+
+.contentBlock5 img:hover{
+    color: #F0B7B4
+}
+
 .contentBlock4 img{
-    height: 398px;
+    height: auto;
     width: 866px;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -189,16 +313,4 @@ body{
 
 
 
-.contentBlock1 h1 {
-    padding-top: 4em;
-    font-family: "Lucida Console", Helvetica, sans-serif;
-    padding-left: 700px;
-    color: #E1DCC4;
-    
-}
 
-.contentBlock1 p {
-    font-family: "Lucida Console", Helvetica, sans-serif;
-    padding-left: 700px;
-    color: #E1DCC4;
-}
