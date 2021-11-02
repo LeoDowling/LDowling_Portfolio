@@ -63,6 +63,7 @@ body{
 }
 .nav_bar #navItem1:hover{
     color: #F0B7B4;
+    transform:scale(1.2);
 }
 
 .nav_bar #navItem2{
@@ -74,6 +75,7 @@ body{
 }
 .nav_bar #navItem2:hover{
     color: #F0B7B4;
+    transform:scale(1.2);
 }
 .nav_bar #navItem3{
     padding-left: 2vw;
@@ -84,6 +86,7 @@ body{
 }
 .nav_bar #navItem3:hover{
     color: #F0B7B4;
+    transform:scale(1.2);
 }
 .nav_bar #navItem4{
     padding-left: 2vw;
@@ -94,6 +97,7 @@ body{
 }
 .nav_bar #navItem4:hover{
     color: #F0B7B4;
+    transform:scale(1.2);
 }
 
 .contentBlock1{
@@ -102,6 +106,7 @@ body{
     height: auto;
     position: static; 
     max-width: 100%;
+    padding-bottom: 2em;
     
 }
 
@@ -121,15 +126,38 @@ body{
     height: auto;
 }
 
-.contentBlock1 img{
+.contentBlock1 .CB1Image{
+    display: block;
+    position: relative;
     padding-left: 1em;
     padding-top: 2em;
     max-width: 60vw;
     min-width: 30vw;
-    height:auto;
-    float:left;
+    height: auto;
+    float: left;
     border: none;
 }
+.contentBlock1 .CB1Image .OGIMG{
+    max-width: 60vw;
+    min-width: 30vw;
+    height: auto;
+    position: relative;
+    
+}
+.contentBlock1 .CB1Image .ImgSwap{
+    max-width: 60vw;
+    min-width: 30vw;
+    height: auto;
+    position: absolute;
+    display: none;
+    top: 2em;
+    left: 1em;
+    z-index: 99;
+}
+.contentBlock1 .CB1Image:hover .ImgSwap{
+    display: inline;
+}
+
 
 .contentBlock2{
     background-color: #E1DCC4;
@@ -210,7 +238,13 @@ body{
     overflow:hidden;
     white-space:nowrap;
     line-height:0;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
 }
+
 .contentBlock3 #GroupImage{
     max-width: 22vw;
     min-width: 10vw;
@@ -218,6 +252,11 @@ body{
     max-height: 22vw;
     width:100vw;
 }
+
+.contentBlock3 #GroupImage:hover{
+    transform: scale(1.1);
+}
+
 
 .contentBlock3 p{
     float: left;
@@ -252,9 +291,10 @@ body{
 
 .contentBlock4{
     background-color: #FFFFFF;
+    align-content: center;
     grid-area: contentBlock4;
     height: auto;
-    position: static;
+    
     
 }
 .contentBlock4 h2{
@@ -288,20 +328,53 @@ body{
     padding-left: 2vw;
     max-height: auto;
     padding-bottom: 2em;
+    position: relative;
 }
 
 .contentBlock5 img:hover{
-    color: #F0B7B4
+    transform: scale(1.3);
 }
 
-.contentBlock4 img{
-    height: auto;
-    width: 866px;
-    max-width: 100%;
+
+
+
+.contentBlock4 .mySkills{
     display: block;
+    align-content: center;
+    height: auto;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    position: relative;
+}
+.contentBlock4 .mySkills .OGIMG2{
+    align-content: center;
+    height: auto;
+    max-width: 60vw;
+    min-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    left:22.5vw;
+    position: relative;
+}
+.contentBlock4 .mySkills .ImgSwap2{
+    position: absolute;
+    align-content: center;
+    height:auto;
+    width: 1184px;
+    min-width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+    top:-9.4vh;
+    left: 10.5vw;;
+    float:left;
+    z-index: 99;
+    display:none;
+}
+.contentBlock4 .mySkills:hover .ImgSwap2{
+    display: inline;
 }
 
 .footerBlock{
@@ -312,5 +385,28 @@ body{
 }
 
 
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
